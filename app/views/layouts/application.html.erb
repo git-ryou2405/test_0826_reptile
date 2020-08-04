@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BootstrapInto6</title>
+    <meta charset="UTF-8">
+    <!-- レシポンシブ対応 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <!-- webpacker -->
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <%# assets %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <!-- ファビコン -->
+    <%= favicon_link_tag('favicon2.ico') %>
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5f392e2ea2.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <%= render 'layouts/header' %>
+    
+    <!-- flash_message -->
+    <div class="container">
+      <%= render 'layouts/flash_messages' %>
+    </div>
+    
+     <%= yield %>
+    
+  </body>
+</html>

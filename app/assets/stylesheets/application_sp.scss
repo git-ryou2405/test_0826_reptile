@@ -1,0 +1,61 @@
+// em    ・・・親要素に対しての相対サイズ。font-sizeに使用する。
+//           （%と同じ考え方・・・100%  = 1em、50%  = 0.5em ）
+//
+// rem   ・・・root要素に対しての 相対サイズ。font-sizeに使う。
+//           （htmlタグのデフォルト値は16pxらしい、つまり「font-size: 10rem;」は、160px ）
+
+// ▼画面サイズによるキーワード
+//   576px   ・・・sm
+//   768px   ・・・md
+//   992px   ・・・lg
+//   1200px  ・・・xl
+
+/////*            max 767px              *///////////////////////////
+@media screen and (max-width: 767px) {
+
+html { font-size: 62.5%;}
+.nav li .btn { font-size: 1.4rem; }
+body { padding-top: 4rem; }
+#logo { font-size: 1.6rem;}
+/*==============================================================================
+  topページ
+============================================================================= */
+.jumbotron {
+  background:url(/images/hero.jpg) no-repeat 30% 40%/ cover;
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+  margin: 3rem 0px 4rem;
+}
+
+.jumbotron .txt01 {
+  font-size: 2rem;
+}
+
+.jumbotron .txt02 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0;
+}
+
+}
+
+/////* max 400px（ Galaxy S7 =412px以下 ） *///////////////////////////
+@media screen and (max-width: 400px) {
+body { padding-top: 4rem; }
+
+.jumbotron h1 {
+  font-size: 3.2rem;
+  margin: 3rem 0px 4rem;
+}
+
+.jumbotron .txt01 {
+  font-size: 1.4rem;
+}
+
+.jumbotron .txt02 {
+  font-size: 1rem;
+  margin: 1rem 0 0;
+}
+
+}
